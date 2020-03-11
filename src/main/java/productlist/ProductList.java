@@ -4,6 +4,9 @@ import java.util.*;
 
 public class ProductList {
     private Map<Integer, Product> map = new HashMap<Integer, Product>();
+    public ProductList() {
+
+    }
 
     public boolean addProduct(String name, int rubles, int pennies) {
         for (int i = 0; i <= map.size() - 1; i++) {
@@ -72,7 +75,30 @@ public class ProductList {
         }
     }
 
+    @Override
+    public String toString() {
+        StringBuilder str = null;
+        String str1 = null;
+        for (int i = 0; i <= map.size() - 1; i++) {
+            if (map.get(i) == null) continue;
+            str1.format("%02d%n", map.get(i).getPennies());
+            str.append(map.get(i).getName()).append("\t\t").append(map.get(i).getRubles()).append(",").append(str1).append("\n");
+        }
+        assert str != null;
+        return str.toString();
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (null == obj || this.getClass() != obj.getClass()) return false;
+        return map.equals((ProductList) obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(map);
+    }
 
     public static void main(String[] args) {
         ProductList map = new ProductList();
@@ -87,7 +113,8 @@ public class ProductList {
         //map.changeName("ggg", "ppp");
         System.out.println(map.costDetermine(0, 5));
         System.out.println(map.size());
-        map.print();
+        //map.print();
+        System.out.println(map.toString());
 
 
         Map<Integer, Integer> map1 = new LinkedHashMap<Integer, Integer>();
