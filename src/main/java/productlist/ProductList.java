@@ -4,9 +4,6 @@ import java.util.*;
 
 public class ProductList {
     private Map<Integer, Product> map = new HashMap<Integer, Product>();
-    public ProductList() {
-
-    }
 
     public boolean addProduct(String name, int rubles, int pennies) {
         for (int i = 0; i <= map.size() - 1; i++) {

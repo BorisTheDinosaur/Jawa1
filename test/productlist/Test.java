@@ -1,10 +1,15 @@
 package productlist;
-
+/*
+import org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+*/
 
-public class Test {
+class TestProduct {
     private  ProductList test;
-
+/*
     @BeforeEach
     void input() {
         test = new ProductList();
@@ -16,18 +21,33 @@ public class Test {
     }
 
     @org.junit.jupiter.api.Test
-    void addProduct() {}
+    void addProduct() {
+        assertTrue(test.addProduct("Lemon", 50,00));
+        assertFalse(test.addProduct("Cola", -50, -10));
+    }
 
     @org.junit.jupiter.api.Test
-    void delete() {}
+    void delete() {
+        assertTrue(test.delete("Icecream"));
+        assertFalse(test.delete("ppp"));
+    }
 
     @org.junit.jupiter.api.Test
-    void changeName() {}
+    void changeName() {
+        assertTrue(test.changeName("Milk", "Juice"));
+        assertFalse(test.changeName("ddd", "ggg"));
+    }
 
     @org.junit.jupiter.api.Test
-    void changeCost() {}
+    void changeCost() {
+        assertTrue();
+        assertFalse();
+    }
 
     @org.junit.jupiter.api.Test
-    void costDetermine() {}
-
+    void costDetermine() {
+        assertTrue();
+        assertFalse();
+    }
+*/
 }
