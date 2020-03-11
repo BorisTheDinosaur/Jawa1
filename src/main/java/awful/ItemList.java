@@ -1,3 +1,5 @@
+package awful;
+
 import java.util.ArrayList;
 
 public class ItemList{

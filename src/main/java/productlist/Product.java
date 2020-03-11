@@ -1,3 +1,7 @@
+package productlist;
+
+import java.util.Objects;
+
 public class Product {
     private String name;
     private int rubles;
@@ -36,16 +40,18 @@ public class Product {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Product: name = " + name +  "; rubles = " + rubles + "; pennies = " + pennies;
     }
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        if (this == obj) return true;
+        if (null == obj || this.getClass() != obj.getClass()) return false;
+        return name.equals(((Product) obj).name) && rubles == ((Product) obj).rubles && pennies == ((Product) obj).pennies;
     }
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return Objects.hash(name, rubles, pennies);
     }
 }

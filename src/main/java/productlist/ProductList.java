@@ -1,9 +1,14 @@
+package productlist;
+
 import java.util.*;
 
 public class ProductList {
     private Map<Integer, Product> map = new HashMap<Integer, Product>();
 
     public boolean addProduct(String name, int rubles, int pennies) {
+        for (int i = 0; i <= map.size() - 1; i++) {
+            if (map.get(i).getName().equals(name)) return false;
+        }
         map.put(map.size(), new Product(name, rubles, pennies));
         return true;
     }
@@ -18,45 +23,37 @@ public class ProductList {
         return false;
     }
 
-    public void changeName(String oldName, String newName){
+    public boolean changeName(String oldName, String newName){
         for (int i = 0; i <= map.size() - 1; i++) {
             if (map.get(i).getName().equals(oldName)){
                 map.get(i).setName(newName);
-                break;
+                return true;
             }
         }
+        return false;
     }
 
-    public void changeCost(String name, int rubles, int pennies){
+    public boolean changeCost(String name, int rubles, int pennies){
         for (int i = 0; i <= map.size() - 1; i++) {
             if (map.get(i).getName().equals(name)){
                 map.get(i).setRubles(rubles);
                 map.get(i).setPennies(pennies);
-                break;
+                return true;
             }
         }
+        return false;
     }
 
-    public double costDetermine(Integer code, int amount){
+    public double costDetermine(int code, int amount){
         Set<Map.Entry<Integer, Product>> set = map.entrySet();
         int i = 0;
         for (Map.Entry<Integer, Product> pair : set) {
-            if (code.equals(pair.getKey())) {
+            if (code == pair.getKey()) {
                 return ((double) map.get(i).getRubles() + (double) map.get(i).getPennies() / 100) * amount;
             }
             i++;
         }
         return 0.0;
-    }
-
-    private Integer getKey(Integer code) {
-        Set<Map.Entry<Integer, Product>> set = map.entrySet();
-        for (Map.Entry<Integer, Product> pair : set) {
-            if (code.equals(pair.getKey())) {
-                return pair.getKey();
-            }
-        }
-        return null;
     }
 
 
@@ -75,6 +72,8 @@ public class ProductList {
         }
     }
 
+
+
     public static void main(String[] args) {
         ProductList map = new ProductList();
         map.addProduct("Milk", 29, 99);
@@ -84,7 +83,7 @@ public class ProductList {
         map.addProduct("Fish", 299, 99);
         map.changeName("Milk", "Juice");
         map.delete("Icecream");
-        //map.changeCost("Water", 100, 0);
+        map.changeCost("Water", 100, 0);
         //map.changeName("ggg", "ppp");
         System.out.println(map.costDetermine(0, 5));
         System.out.println(map.size());
