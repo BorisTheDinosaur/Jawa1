@@ -30,7 +30,7 @@ public class ProductList {
                 return true;
             }
         }
-        return false;
+        throw new IllegalArgumentException();
     }
 
     public boolean changeCost(String name, int rubles, int pennies){
@@ -41,7 +41,7 @@ public class ProductList {
                 return true;
             }
         }
-        return false;
+        throw new IllegalArgumentException();
     }
 
     public double costDetermine(int code, int amount){
@@ -53,7 +53,7 @@ public class ProductList {
             }
             i++;
         }
-        return 0.0;
+        throw new IllegalArgumentException();
     }
 
 
@@ -109,9 +109,10 @@ public class ProductList {
         map.changeCost("Water", 100, 0);
         //map.changeName("ggg", "ppp");
         System.out.println(map.costDetermine(0, 5));
+        System.out.println(map.costDetermine(10, 5));
         System.out.println(map.size());
-        //map.print();
-        System.out.println(map.toString());
+        map.print();
+        //System.out.println(map.toString());
 
 
         Map<Integer, Integer> map1 = new LinkedHashMap<Integer, Integer>();

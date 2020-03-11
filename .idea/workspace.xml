@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1870914b-e9b4-4484-97b4-07f6f0014c27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/productlist/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/productlist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/productlist/ProductList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productlist/ProductList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/productlist/Test.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +31,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583950739822</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Almost DONE&#10;&#10;Left:&#10;   -Tests">
+      <created>1583951037355</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583951037355</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
