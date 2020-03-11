@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1870914b-e9b4-4484-97b4-07f6f0014c27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jawa1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jawa1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/awful/ItemList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/awful/Pair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ItemList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ProductList.class" beforeDir="false" />
-    </list>
+    <list default="true" id="1870914b-e9b4-4484-97b4-07f6f0014c27" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +87,14 @@
       <option name="presentableId" value="Default" />
       <updated>1582480996402</updated>
     </task>
+    <task id="LOCAL-00001" summary="Almost DONE&#10;&#10;Left:&#10;   -Tests&#10;Productlist:&#10;   -toString&#10;   -equals&#10;   -hashCode">
+      <created>1583943224598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583943224598</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +107,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Almost DONE&#10;&#10;Left:&#10;   -Tests&#10;Productlist:&#10;   -toString&#10;   -equals&#10;   -hashCode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost DONE&#10;&#10;Left:&#10;   -Tests&#10;Productlist:&#10;   -toString&#10;   -equals&#10;   -hashCode" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
