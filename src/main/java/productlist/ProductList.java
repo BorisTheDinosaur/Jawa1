@@ -20,12 +20,12 @@ public class ProductList {
                 return true;
             }
         }
-        return false;
+        throw new NullPointerException();
     }
 
     public boolean changeName(String oldName, String newName){
         for (int i = 0; i <= map.size() - 1; i++) {
-            if (map.get(i).getName().equals(oldName)){
+            if (map.get(i).getName().equals(oldName) && map.get(i) != null){
                 map.get(i).setName(newName);
                 return true;
             }
@@ -34,6 +34,7 @@ public class ProductList {
     }
 
     public boolean changeCost(String name, int rubles, int pennies){
+        if (rubles < 0 || pennies < 0) throw new IllegalArgumentException();
         for (int i = 0; i <= map.size() - 1; i++) {
             if (map.get(i).getName().equals(name)){
                 map.get(i).setRubles(rubles);
@@ -45,6 +46,7 @@ public class ProductList {
     }
 
     public double costDetermine(int code, int amount){
+        if (amount < 0) throw new IllegalArgumentException();
         Set<Map.Entry<Integer, Product>> set = map.entrySet();
         int i = 0;
         for (Map.Entry<Integer, Product> pair : set) {
@@ -55,7 +57,6 @@ public class ProductList {
         }
         throw new IllegalArgumentException();
     }
-
 
 
     public int size() {
@@ -71,6 +72,7 @@ public class ProductList {
             }
         }
     }
+
 
     @Override
     public String toString() {
@@ -95,29 +97,6 @@ public class ProductList {
     @Override
     public int hashCode() {
         return Objects.hash(map);
-    }
-
-    public static void main(String[] args) {
-        ProductList map = new ProductList();
-        map.addProduct("Milk", 29, 99);
-        map.addProduct("Soda", 59, 0);
-        map.addProduct("Water", 35, 49);
-        map.addProduct("Icecream",  140, 0);
-        map.addProduct("Fish", 299, 99);
-        map.changeName("Milk", "Juice");
-        map.delete("Icecream");
-        map.changeCost("Water", 100, 0);
-        //map.changeName("ggg", "ppp");
-        System.out.println(map.costDetermine(0, 5));
-        System.out.println(map.costDetermine(10, 5));
-        System.out.println(map.size());
-        map.print();
-        //System.out.println(map.toString());
-
-
-        Map<Integer, Integer> map1 = new LinkedHashMap<Integer, Integer>();
-        map1.put(map.size(), 50);
-        System.out.println(map1);
     }
 
 }

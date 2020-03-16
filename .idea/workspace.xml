@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1870914b-e9b4-4484-97b4-07f6f0014c27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jawa1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jawa1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/productlist/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/awful/ItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/awful/ItemList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/awful/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/awful/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/productlist/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productlist/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/productlist/ProductList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productlist/ProductList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/productlist/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/productlist/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/productlist/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +34,16 @@
   <component name="ProjectId" id="1YDdFl1rtifVdCqBqH94gKmjCq7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/test/products" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,34 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProductList (1)">
-    <configuration name="ItemList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ItemList" />
-      <module name="Jawa1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductList (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="productlist.ProductList" />
-      <module name="Jawa1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="productlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ProductList" />
-      <module name="Jawa1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestProduct">
     <configuration name="TestProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jawa1" />
       <extension name="coverage">
@@ -88,12 +73,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestProduct.addProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jawa1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="productlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="productlist" />
+      <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
+      <option name="METHOD_NAME" value="addProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProduct.changeCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jawa1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="productlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="productlist" />
+      <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
+      <option name="METHOD_NAME" value="changeCost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProduct.changeName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jawa1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="productlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="productlist" />
+      <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
+      <option name="METHOD_NAME" value="changeName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProduct.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Jawa1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="productlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="productlist" />
+      <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProductList (1)" />
         <item itemvalue="JUnit.TestProduct" />
-        <item itemvalue="Application.ProductList" />
-        <item itemvalue="Application.ItemList" />
+        <item itemvalue="JUnit.TestProduct.addProduct" />
+        <item itemvalue="JUnit.TestProduct.delete" />
+        <item itemvalue="JUnit.TestProduct.changeName" />
+        <item itemvalue="JUnit.TestProduct.changeCost" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583951037355</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Almost DONE&#10;&#10;Left:&#10;   -Tests">
+      <created>1583969029927</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583969029927</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,7 +208,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -161,19 +220,5 @@
     <MESSAGE value="Almost DONE&#10;&#10;Left:&#10;   -Tests&#10;Productlist:&#10;   -toString&#10;   -equals&#10;   -hashCode" />
     <MESSAGE value="Almost DONE&#10;&#10;Left:&#10;   -Tests" />
     <option name="LAST_COMMIT_MESSAGE" value="Almost DONE&#10;&#10;Left:&#10;   -Tests" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/productlist/Product.java</url>
-          <line>7</line>
-          <properties class="productlist.Product" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

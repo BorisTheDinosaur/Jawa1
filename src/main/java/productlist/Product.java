@@ -9,9 +9,11 @@ public class Product {
 
     public Product (String name, int rubles, int pennies) {
         this.name = name;
-        this.rubles = rubles;
-        this.pennies = pennies;
-
+        if (rubles == 0 && pennies == 0) throw new IllegalArgumentException();
+        if (rubles >= 0 ) this.rubles = rubles;
+        else throw new IllegalArgumentException();
+        if (pennies >= 0 ) this.pennies = pennies;
+        else throw new IllegalArgumentException();
     }
 
     public String getName() {
@@ -30,11 +32,11 @@ public class Product {
         this.name = name;
     }
 
-    public void setRubles(int rubles) {
+    public void setRubles(Integer rubles) {
         this.name = name;
     }
 
-    public void setPennies(int pennies) {
+    public void setPennies(Integer pennies) {
         this.name = name;
     }
 
