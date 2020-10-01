@@ -1,4 +1,4 @@
-package productlist;
+package ProductList;
 
 
 import java.math.BigDecimal;
@@ -110,16 +110,19 @@ public class ProductList {
         return res;
     }
 
+    private HashMap getMap() {return map;}
+
 
     @Override
     public String toString() {
 
         StringBuilder res = new StringBuilder();
-        String str = "";
-        for (int i = 0; i <= map.size() - 1; i++) {
+        int i = 0;
+        while (i <= map.size() - 1) {
             if (!map.containsKey(i)) continue;
-            str.format("%02d%n", map.get(i).getPennies());
-            res.append(map.get(i).getName()).append("\t\t").append(map.get(i).getRubles()).append(",").append(map.get(i).getPennies()).append(System.lineSeparator());
+            String str = String.format("%02d", map.get(i).getPennies());
+            res.append(map.get(i).getName()).append("\t\t").append(map.get(i).getRubles()).append(",").append(str).append(System.lineSeparator());
+            i++;
         }
         return res.toString();
     }
@@ -128,7 +131,7 @@ public class ProductList {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (null == obj || this.getClass() != obj.getClass()) return false;
-        return map.equals((ProductList) obj);
+        return map.equals(((ProductList) obj).getMap());
     }
 
     @Override

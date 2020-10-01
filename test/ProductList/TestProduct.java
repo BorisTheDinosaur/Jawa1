@@ -1,4 +1,4 @@
-package productlist;
+package ProductList;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -11,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TestProduct {
     private  ProductList test;
+    private  ProductList clone;
 
     @BeforeEach
     void input() {
@@ -91,10 +92,22 @@ class TestProduct {
     @Test
     void other() {
         assertEquals("Milk\t\t29,99" + System.lineSeparator() +
-                "Soda\t\t59,0" + System.lineSeparator() +
+                "Soda\t\t59,00" + System.lineSeparator() +
                 "Water\t\t35,49" + System.lineSeparator() +
-                "Icecream\t\t140,5" + System.lineSeparator() +
+                "Icecream\t\t140,05" + System.lineSeparator() +
                 "Fish\t\t299,99" + System.lineSeparator(), test.toString());
+
+        clone = test;
+        String str = "GG";
+
+        assertTrue(test.equals(test));
+        assertTrue(test.equals(clone));
+        clone.changeName("Icecream", "Smth");
+        assertFalse(test.equals(null));
+        assertFalse(test.equals(str));
+        assertFalse(test.equals(clone));
+
+        assertEquals(226272070, test.hashCode());
 
     }
 
