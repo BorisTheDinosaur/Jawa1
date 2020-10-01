@@ -33,11 +33,11 @@ public class Product {
     }
 
     public void setRubles(Integer rubles) {
-        this.name = name;
+        this.rubles = rubles;
     }
 
     public void setPennies(Integer pennies) {
-        this.name = name;
+        this.pennies = pennies;
     }
 
     @Override

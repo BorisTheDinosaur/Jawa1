@@ -1,17 +1,31 @@
 package productlist;
 
+
+import java.math.BigDecimal;
 import java.util.*;
 
 public class ProductList {
-    private Map<Integer, Product> map = new HashMap<Integer, Product>();
+    private final HashMap<Integer, Product> map = new HashMap<Integer, Product>();
+
+
 
     public boolean addProduct(String name, int rubles, int pennies) {
         for (int i = 0; i <= map.size() - 1; i++) {
+            if (!map.containsKey(i)) continue;
             if (map.get(i).getName().equals(name)) return false;
         }
         map.put(map.size(), new Product(name, rubles, pennies));
         return true;
     }
+
+    public boolean addProduct(int code, String name, int rubles, int pennies) {
+        if (code < 0) throw new IllegalArgumentException();
+        if (map.containsKey(code)) return false;
+        map.put(code, new Product(name, rubles, pennies));
+        return true;
+    }
+
+
 
     public boolean delete(String name) {
         for (int i = 0; i <= map.size() - 1; i++) {
@@ -20,8 +34,18 @@ public class ProductList {
                 return true;
             }
         }
-        throw new NullPointerException();
+        return false;
     }
+
+    public boolean delete(int code) {
+        if (map.containsKey(code)) {
+            map.remove(code);
+            return true;
+        }
+        return false;
+    }
+
+
 
     public boolean changeName(String oldName, String newName){
         for (int i = 0; i <= map.size() - 1; i++) {
@@ -30,8 +54,18 @@ public class ProductList {
                 return true;
             }
         }
-        throw new IllegalArgumentException();
+        return false;
     }
+
+    public boolean changeName(int code, String newName){
+        if (map.containsKey(code)) {
+            map.get(code).setName(newName);
+            return true;
+        }
+        return false;
+    }
+
+
 
     public boolean changeCost(String name, int rubles, int pennies){
         if (rubles < 0 || pennies < 0) throw new IllegalArgumentException();
@@ -42,49 +76,52 @@ public class ProductList {
                 return true;
             }
         }
-        throw new IllegalArgumentException();
+        return false;
     }
 
-    public double costDetermine(int code, int amount){
+    public boolean changeCost(int code, int rubles, int pennies){
+        if (rubles < 0 || pennies < 0) throw new IllegalArgumentException();
+        if (map.containsKey(code)) {
+            map.get(code).setRubles(rubles);
+            map.get(code).setPennies(pennies);
+            return true;
+        }
+        return false;
+    }
+
+
+
+    public BigDecimal costDetermine(int code, int amount) {
         if (amount < 0) throw new IllegalArgumentException();
-        Set<Map.Entry<Integer, Product>> set = map.entrySet();
-        int i = 0;
-        for (Map.Entry<Integer, Product> pair : set) {
-            if (code == pair.getKey()) {
-                return ((double) map.get(i).getRubles() + (double) map.get(i).getPennies() / 100) * amount;
-            }
-            i++;
+        if (map.containsKey(code)) {
+            BigDecimal rubles = BigDecimal.valueOf(map.get(code).getRubles());
+            BigDecimal pennies = BigDecimal.valueOf(map.get(code).getPennies()).divide(BigDecimal.valueOf(100));
+            return rubles.add(pennies).multiply(BigDecimal.valueOf(amount));
         }
         throw new IllegalArgumentException();
     }
 
-
-    public int size() {
-        int x = Math.max(map.size(), map.size());
-        return x;
-    }
-
-    public void print(){
-        for (int i = 0; i <= map.size() - 1; i++) {
-            if (map.get(i) != null) {
-                System.out.print(map.get(i).getName() + "\t\t" + map.get(i).getRubles() + ",");
-                System.out.format("%02d%n", map.get(i).getPennies());
-            }
+    public Double costDetermine(HashMap<Integer, Integer> costs) {
+        double res = 0.0;
+        Set<HashMap.Entry<Integer, Integer>> set = costs.entrySet();
+        for (HashMap.Entry<Integer, Integer> pair: set) {
+            res += this.costDetermine(pair.getKey(), pair.getValue()).doubleValue();
         }
+        return res;
     }
 
 
     @Override
     public String toString() {
-        StringBuilder str = null;
-        String str1 = null;
+
+        StringBuilder res = new StringBuilder();
+        String str = "";
         for (int i = 0; i <= map.size() - 1; i++) {
-            if (map.get(i) == null) continue;
-            str1.format("%02d%n", map.get(i).getPennies());
-            str.append(map.get(i).getName()).append("\t\t").append(map.get(i).getRubles()).append(",").append(str1).append("\n");
+            if (!map.containsKey(i)) continue;
+            str.format("%02d%n", map.get(i).getPennies());
+            res.append(map.get(i).getName()).append("\t\t").append(map.get(i).getRubles()).append(",").append(map.get(i).getPennies()).append(System.lineSeparator());
         }
-        assert str != null;
-        return str.toString();
+        return res.toString();
     }
 
     @Override

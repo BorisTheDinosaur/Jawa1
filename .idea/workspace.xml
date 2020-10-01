@@ -1,21 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1870914b-e9b4-4484-97b4-07f6f0014c27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_20_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jawa1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Jawa1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/productlist/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/productlist/ProductList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/awful/ItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/awful/ItemList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/awful/Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/awful/Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Jawa1.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/productlist/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productlist/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/productlist/ProductList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/productlist/ProductList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/productlist/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/productlist/Test.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +62,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1YDdFl1rtifVdCqBqH94gKmjCq7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -45,19 +87,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.TestProduct">
+  <component name="RunManager" selected="JUnit.TestProduct.other">
     <configuration name="TestProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jawa1" />
       <extension name="coverage">
@@ -73,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProduct.addProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestProduct.costDetermine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jawa1" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +113,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="productlist" />
       <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
-      <option name="METHOD_NAME" value="addProduct" />
+      <option name="METHOD_NAME" value="costDetermine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProduct.changeCost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestProduct.other" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jawa1" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +129,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="productlist" />
       <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
-      <option name="METHOD_NAME" value="changeCost" />
+      <option name="METHOD_NAME" value="other" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProduct.changeName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestProduct.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jawa1" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +145,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="productlist" />
       <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
-      <option name="METHOD_NAME" value="changeName" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProduct.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestProduct.toString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Jawa1" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +161,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="productlist" />
       <option name="MAIN_CLASS_NAME" value="productlist.TestProduct" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="METHOD_NAME" value="toString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,14 +169,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestProduct.other" />
         <item itemvalue="JUnit.TestProduct" />
-        <item itemvalue="JUnit.TestProduct.addProduct" />
-        <item itemvalue="JUnit.TestProduct.delete" />
-        <item itemvalue="JUnit.TestProduct.changeName" />
-        <item itemvalue="JUnit.TestProduct.changeCost" />
+        <item itemvalue="JUnit.TestProduct.test" />
+        <item itemvalue="JUnit.TestProduct.toString" />
+        <item itemvalue="JUnit.TestProduct.costDetermine" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -200,25 +231,73 @@
       <option name="project" value="LOCAL" />
       <updated>1583969029927</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Done">
+      <created>1584389990185</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584389990185</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Almost DONE&#10;&#10;Left:&#10;   -Tests&#10;Productlist:&#10;   -toString&#10;   -equals&#10;   -hashCode" />
     <MESSAGE value="Almost DONE&#10;&#10;Left:&#10;   -Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost DONE&#10;&#10;Left:&#10;   -Tests" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601555414311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1601555414311" />
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1601555366842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601555366842" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1601555366842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601555366842" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1601555366841">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601555366841" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1601555366842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601555366842" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601211337883">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601211337883" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Jawa1$TestProduct.ic" NAME="TestProduct Coverage Results" MODIFIED="1601238013330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>productlist.*</FILTER>
+    </SUITE>
   </component>
 </project>
