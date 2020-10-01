@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.util.*;
 
 public class ProductList {
-    private final HashMap<Integer, Product> map = new HashMap<Integer, Product>();
+    private final HashMap<Integer, Product> map = new HashMap<>();
 
 
 
@@ -110,7 +110,7 @@ public class ProductList {
         return res;
     }
 
-    private HashMap getMap() {return map;}
+    private HashMap<Integer, Product> getMap() {return map;}
 
 
     @Override

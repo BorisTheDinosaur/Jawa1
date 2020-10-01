@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TestProduct {
     private  ProductList test;
-    private  ProductList clone;
 
     @BeforeEach
     void input() {
@@ -27,11 +26,11 @@ class TestProduct {
     void addProduct() {
         assertTrue(test.addProduct("Lemon", 50,0));
         assertTrue(test.addProduct(10,"Jam", 0,1));
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.addProduct("Cola", -50, -10); });
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.addProduct("Gum", 0, 0); });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.addProduct("Cola", -50, -10));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.addProduct("Gum", 0, 0));
         assertFalse(test.addProduct("Lemon", 50,0));
         assertFalse(test.addProduct(10,"JamJar", 110,1));
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.addProduct(-10,"JamJar", 110,1); });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.addProduct(-10,"JamJar", 110,1));
     }
 
     @Test
@@ -65,14 +64,14 @@ class TestProduct {
         assertTrue(test.changeCost(1, 100, 100));
         assertTrue(test.changeCost(4, 100, 100));
         assertFalse(test.changeCost("Wr", 910, 0));
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.changeCost("Water", -910, 0); });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.changeCost("Water", -910, 0));
         assertFalse(test.changeCost(10, 800, 0));
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.changeCost(2, 800, -300); });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.changeCost(2, 800, -300));
     }
 
     @Test
     void costDetermine() {
-        HashMap<Integer, Integer> costs = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> costs = new HashMap<>();
         costs.put(1,40);
         costs.put(3,5);
 
@@ -83,9 +82,9 @@ class TestProduct {
 
         costs.put(-1,1);
 
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { assertEquals(3060.25, test.costDetermine(costs)); });
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.costDetermine(4, -2); });
-        Assertions.assertThrows(IllegalArgumentException.class, () -> { test.costDetermine(-1, 0); });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> assertEquals(3060.25, test.costDetermine(costs)));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.costDetermine(4, -2));
+        Assertions.assertThrows(IllegalArgumentException.class, () -> test.costDetermine(-1, 0));
 
     }
 
@@ -97,14 +96,14 @@ class TestProduct {
                 "Icecream\t\t140,05" + System.lineSeparator() +
                 "Fish\t\t299,99" + System.lineSeparator(), test.toString());
 
-        clone = test;
+        ProductList clone = test;
         String str = "GG";
 
-        assertTrue(test.equals(test));
-        assertTrue(test.equals(clone));
+        assertEquals(test, test);
+        assertEquals(clone, test);
         clone.changeName("Icecream", "Smth");
-        assertFalse(test.equals(null));
-        assertFalse(test.equals(str));
+        assertNotEquals(test, null);
+        assertNotEquals(str, test);
         assertFalse(test.equals(clone));
 
         assertEquals(226272070, test.hashCode());
