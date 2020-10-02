@@ -101,12 +101,8 @@ class TestProduct {
 
         assertEquals(test, test);
         assertEquals(clone, test);
-        clone.changeName("Icecream", "Smth");
         assertNotEquals(test, null);
         assertNotEquals(str, test);
-        assertFalse(test.equals(clone));
-
-        assertEquals(226272070, test.hashCode());
 
     }
 
